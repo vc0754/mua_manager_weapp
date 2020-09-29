@@ -1,0 +1,1 @@
+<view class="content data-v-57280228"><view class="text-area data-v-57280228"><text class="title data-v-57280228">{{title}}</text></view><text data-page="/pages/index/s" data-event-opts="{{[['tap',[['goto',['$event']]]]]}}" bindtap="__e" class="data-v-57280228">SS</text></view>
