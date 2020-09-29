@@ -1,7 +1,11 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/index/s"
+    "pages/index",
+    "pages/qiehuan",
+    "pages/chanpinxinxi",
+    "pages/xiaoxitongzhi",
+    "pages/xiaoxitongzhi2",
+    "pages/fabutongzhi"
   ],
   "subPackages": [],
   "window": {

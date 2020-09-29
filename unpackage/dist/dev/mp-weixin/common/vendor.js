@@ -10344,12 +10344,19 @@ var utils = {
     uni.showToast({ title: title, icon: icon, duration: duration });
   },
 
-  modal: function modal() {var title = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '提示';var content = arguments.length > 1 ? arguments[1] : undefined;var callback = arguments.length > 2 ? arguments[2] : undefined;var showCancel = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : true;var cancelColor = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : '#555';var confirmColor = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : '#5677fc';var confirmText = arguments.length > 6 && arguments[6] !== undefined ? arguments[6] : '确定';
-    uni.showModal({ title: title, content: content, showCancel: showCancel, cancelColor: cancelColor, confirmColor: confirmColor, confirmText: confirmText,
-      success: function success(res) {
-        callback && callback(res.confirm ? true : false);
-      } });
-
+  /**
+      * 
+      * @param {*} obj 
+      * obj.title
+      * obj.content
+      * obj.showCancel: true,
+      * obj.cancelText: '取消',
+      * obj.cancelColor: '#000000',
+      * obj.confirmText: '确定',
+      * obj.confirmColor: '#5677fc',
+      */
+  modal: function modal(obj) {
+    uni.showModal(obj);
   },
 
   request_payment: function request_payment(res) {var _this = this;

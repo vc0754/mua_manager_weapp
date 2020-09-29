@@ -37,12 +37,19 @@ const utils = {
     uni.showToast({ title, icon, duration })
   },
 
-  modal(title = '提示', content, callback, showCancel = true, cancelColor = '#555', confirmColor = '#5677fc', confirmText = '确定') {
-    uni.showModal({ title, content, showCancel, cancelColor, confirmColor, confirmText,
-			success(res) {
-        callback && callback( res.confirm ? true : false )
-			}
-		})
+  /**
+   * 
+   * @param {*} obj 
+   * obj.title
+   * obj.content
+   * obj.showCancel: true,
+   * obj.cancelText: '取消',
+   * obj.cancelColor: '#000000',
+   * obj.confirmText: '确定',
+   * obj.confirmColor: '#5677fc',
+   */
+  modal(obj) {
+    uni.showModal(obj)
   },
 
   request_payment(res) {

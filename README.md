@@ -1,4 +1,4 @@
-## MUA 小程序管理后他 Hbuilder 版本
+## MUA 小程序管理后台 Hbuilder 版本
 
 本版本采用 vue 语法
 自主封装以下插件方法，并挂载到 Vue 实例上

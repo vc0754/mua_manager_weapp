@@ -25,8 +25,20 @@
       "list": []
     },
     "miniprogram": {
-      "current": -1,
-      "list": []
+      "current": 1,
+      "list": [
+        {
+          "name": "Meetuall助手",
+          "id": 0,
+          "pathName": "pages/index"
+        },
+        {
+          "id": 1,
+          "name": "pages/index",
+          "pathName": "pages/index",
+          "query": ""
+        }
+      ]
     }
   }
 }
